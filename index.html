@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Vatsala Kaashyap — Portfolio</title>
+  <meta name="description" content="Portfolio of Vatsala Kaashyap — enthusiastic software developer with experience in ADAS (C/C++), PHP, OpenCV, and MERN backend." />
+  <link rel="icon" href="favicon.ico" type="image/x-icon">
+  <style>
+    :root{
+      --bg:#0b1020; --panel:#121833; --ink:#eaf2ff; --muted:#a9b4d0;
+      --accent:#7c9eff; --chip:#1c2347; --ok:#8ef0a7;
+    }
+    *{box-sizing:border-box}
+    html,body{margin:0}
+    body{
+      background:linear-gradient(135deg,#0b1020 0%, #0e1430 60%, #0b1020 100%);
+      color:var(--ink); font:16px/1.6 system-ui, -apple-system, Segoe UI, Roboto, Helvetica, Arial, sans-serif;
+    }
+    a{color:var(--accent); text-decoration:none}
+    a:hover{text-decoration:underline}
+    .container{max-width:1080px; margin-inline:auto; padding:24px}
+    header{position:sticky; top:0; backdrop-filter:saturate(1.4) blur(8px); background-color:rgba(11,16,32,.65); border-bottom:1px solid rgba(124,158,255,.15); z-index:50}
+    .nav{display:flex; align-items:center; justify-content:space-between; gap:12px}
+    .brand{display:flex; align-items:center; gap:12px; font-weight:700; letter-spacing:.3px}
+    .brand .dot{width:10px; height:10px; border-radius:999px; background:var(--ok); box-shadow:0 0 20px rgba(142,240,167,.8)}
+    nav ul{display:flex; list-style:none; padding:0; margin:0; gap:16px; flex-wrap:wrap}
+    nav a{padding:8px 12px; border-radius:10px; background:transparent}
+    nav a:hover{background:rgba(124,158,255,.12)}
+
+    .hero{display:grid; grid-template-columns:1.2fr .8fr; gap:28px; padding-block:42px}
+    .card{background:var(--panel); border:1px solid rgba(124,158,255,.15); border-radius:18px; padding:22px; box-shadow:0 10px 30px rgba(0,0,0,.22)}
+    .tagbar{display:flex; flex-wrap:wrap; gap:8px; margin-top:12px}
+    .chip{background:var(--chip); color:var(--ink); border:1px solid rgba(124,158,255,.18); padding:6px 10px; border-radius:999px; font-size:.85rem}
+
+    h1{font-size:2.2rem; line-height:1.2; margin:0}
+    h2{font-size:1.4rem; margin:0 0 12px}
+    h3{font-size:1rem; margin:0 0 6px; color:var(--ok)}
+    p{margin:0 0 10px; color:var(--muted)}
+
+    .grid{display:grid; grid-template-columns:repeat(12,1fr); gap:16px}
+    .col-12{grid-column:span 12}
+    .col-6{grid-column:span 6}
+    .col-4{grid-column:span 4}
+    .timeline{display:grid; gap:14px}
+    .item{background:var(--panel); border:1px solid rgba(124,158,255,.15); border-radius:16px; padding:16px}
+    .item small{color:var(--muted)}
+
+    .footer{padding:28px 0; border-top:1px solid rgba(124,158,255,.15); color:var(--muted); text-align:center}
+    .cta{display:inline-flex; align-items:center; gap:8px; background:var(--accent); color:#0a0f22; font-weight:700; border:none; padding:10px 14px; border-radius:12px}
+    .cta:hover{filter:brightness(1.05)}
+
+    @media (max-width:900px){
+      .hero{grid-template-columns:1fr;}
+      .col-6{grid-column:span 12}
+      .col-4{grid-column:span 12}
+    }
+  </style>
+  <script type="application/ld+json">
+  {
+    "@context":"https://schema.org",
+    "@type":"Person",
+    "name":"Vatsala Kaashyap",
+    "email":"mailto:vatsalakaashyap@gmail.com",
+    "url":"",
+    "jobTitle":"Software Developer",
+    "knowsAbout":["C","C++","ADAS","PHP","OpenCV","MongoDB","Express.js","Node.js","TypeScript","JavaScript","Git"],
+    "alumniOf":{"@type":"CollegeOrUniversity","name":"SDMCET Dharwad"},
+    "sameAs":[
+      "https://www.linkedin.com/in/vatsala-kaashyap-0194aa247/",
+      "https://github.com/vatsalak"
+    ]
+  }
+  </script>
+</head>
+<body>
+  <header>
+    <div class="container nav">
+      <div class="brand"><span class="dot"></span> Vatsala Kaashyap</div>
+      <nav>
+        <ul>
+          <li><a href="#about">About</a></li>
+          <li><a href="#experience">Experience</a></li>
+          <li><a href="#projects">Projects</a></li>
+          <li><a href="#skills">Skills</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main class="container">
+    <section class="hero">
+      <div class="card">
+        <h1>Enthusiastic Developer building reliable systems</h1>
+        <p>Hi! I’m <b>Vatsala</b>, a Computer Science graduate with hands-on experience across ADAS (C/C++), backend development (Node/Express), and computer vision (PHP + OpenCV). I love picking up new stacks, collaborating in Agile teams, and shipping features that work.</p>
+        <div class="tagbar">
+          <span class="chip">C/C++ · ADAS</span>
+          <span class="chip">ROS · Ubuntu</span>
+          <span class="chip">Node.js · Express</span>
+          <span class="chip">MongoDB</span>
+          <span class="chip">TypeScript</span>
+          <span class="chip">JavaScript</span>
+          <span class="chip">PHP · OpenCV</span>
+          <span class="chip">Git · Agile</span>
+        </div>
+        <p style="margin-top:16px">
+          <a class="cta" href="#contact">Get in touch</a>
+        </p>
+      </div>
+      <div class="card">
+        <h2>At a glance</h2>
+        <div class="timeline">
+          <div>
+            <h3>Tata Elxsi — Intern</h3>
+            <small>Jan 2024 – Jun 2024 • TBU · ADAS</small>
+            <p>Converted C++ to C and integrated using ROS & Ubuntu; explored sensor fusion (Covariance, Bayes, Information Matrix).</p>
+          </div>
+          <div>
+            <h3>BridgeLabz — Trainee</h3>
+            <small>Sept 2024 – Nov 2024</small>
+            <p>Built REST APIs with Express.js + MongoDB; learned TypeScript, Linux, Git; Agile delivery.</p>
+          </div>
+          <div>
+            <h3>BOAT‑SR (NATS) — Apprentice</h3>
+            <small>Apr 11 – Jun 30, 2024</small>
+            <p>Worked on PHP + OpenCV for character recognition pipelines.</p>
+          </div>
+          <div>
+            <h3>CMTI — Project Associate‑I</h3>
+            <small>Jul 2 – Sept 2024</small>
+            <p>Developed a PHP website for AEDP apprenticeship management (backend, database, UI).</p>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section id="about" style="margin-top:8px">
+<h2>About</h2>
+<p>I’m a BE (Computer Science) graduate from SDMCET, Dharwad (CGPA 8.25). A versatile and enthusiastic learner, always passionate about exploring new technologies. I enjoy working at the intersection of embedded/ADAS and backend systems, and I’m comfortable learning on the go. When I’m not coding, I like exploring new tools and improving developer workflows.</p>
+</section>
+    <section id="experience" class="grid" style="margin-top:6px">
+      <div class="col-6 item">
+        <h3>Tata Elxsi · ADAS</h3>
+        <small>Transportation Business Unit • Jan–Jun 2024</small>
+        <p>Converted C++ to C, ensured integration with ROS and Ubuntu. Participated in sprints and reviews. Worked on algorithms for sensor data fusion.</p>
+      </div>
+      <div class="col-6 item">
+        <h3>BridgeLabz · Backend</h3>
+        <small>Sept–Nov 2024</small>
+        <p>Built and tested REST APIs using Express.js + MongoDB. Worked with TypeScript, JavaScript, Git, and Linux in Agile teams.</p>
+      </div>
+      <div class="col-6 item">
+        <h3>BOAT‑SR (NATS) · Apprentice</h3>
+        <small>Apr 11 – Jun 30, 2024</small>
+        <p>PHP & OpenCV for character recognition; image processing and backend automation tasks.</p>
+      </div>
+      <div class="col-6 item">
+        <h3>CMTI · Project Associate‑I</h3>
+        <small>Jul 2 – Sept 2024</small>
+        <p>PHP website for AEDP apprenticeship program: backend features, DB integration, UI improvements.</p>
+      </div>
+    </section>
+
+    <section id="projects" style="margin-top:8px">
+      <h2>Selected Projects</h2>
+      <div class="grid" style="margin-top:10px">
+        <div class="col-6 item">
+          <h3>Placement Management System</h3>
+          <small>Sep 2022 – Apr 2023</small>
+          <p>Web app using HTML, CSS, JS, and PHP with MySQL backend to streamline placement activities.</p>
+        </div>
+        <div class="col-6 item">
+          <h3>Smart Energy Management</h3>
+          <small>Aug 2023 – May 2024</small>
+          <p>ESP32 + IoT sensors + ThingSpeak to automate appliances based on sensor readings (Arduino IDE).</p>
+        </div>
+      </div>
+    </section>
+
+    <section id="skills" style="margin-top:8px">
+      <h2>Skills</h2>
+      <div class="tagbar">
+        <span class="chip">C</span>
+        <span class="chip">C++</span>
+        <span class="chip">ROS</span>
+        <span class="chip">Ubuntu/Linux</span>
+        <span class="chip">PHP</span>
+        <span class="chip">OpenCV</span>
+        <span class="chip">Node.js</span>
+        <span class="chip">Express.js</span>
+        <span class="chip">MongoDB</span>
+        <span class="chip">TypeScript</span>
+        <span class="chip">JavaScript</span>
+        <span class="chip">Git</span>
+        <span class="chip">OOP</span>
+        <span class="chip">Data Structures</span>
+        <span class="chip">Agile</span>
+      </div>
+    </section>
+
+    <section id="about" style="margin-top:8px">
+      <h2>About</h2>
+      <p>I’m a BE (Computer Science) graduate from SDMCET, Dharwad (CGPA 8.25). I enjoy working at the intersection of embedded/ADAS and backend systems, and I’m comfortable learning on the go. When I’m not coding, I like exploring new tools and improving developer workflows.</p>
+    </section>
+
+    <section id="contact" style="margin-top:8px" class="card">
+      <h2>Contact</h2>
+      <p><b>Email:</b> <a href="mailto:vatsalakaashyap@gmail.com">vatsalakaashyap@gmail.com</a></p>
+      <p><b>Phone:</b> <a href="tel:+916363440178">+91 63634 40178</a></p>
+      <p><b>LinkedIn:</b> <a href="https://www.linkedin.com/in/vatsala-kaashyap-0194aa247/" target="_blank" rel="noreferrer">linkedin.com/in/vatsala-kaashyap-0194aa247</a></p>
+      <p><b>GitHub:</b> <a href="https://github.com/vatsalak" target="_blank" rel="noreferrer">github.com/vatsalak</a></p>
+      <p style="margin-top:10px"><a class="cta" href="Updated_Resume_Vatsala.pdf" download>Download Resume (PDF)</a></p>
+      <p style="color:var(--muted); font-size:.9rem">Tip: place your resume file next to this <code>index.html</code> when hosting.</p>
+    </section>
+  </main>
+
+  <div class="footer">
+    © <span id="y"></span> Vatsala Kaashyap · Built with plain HTML & CSS
+  </div>
+  <script>document.getElementById('y').textContent=new Date().getFullYear()</script>
+</body>
+</html>
